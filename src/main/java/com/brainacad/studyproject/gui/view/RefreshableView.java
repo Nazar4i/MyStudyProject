@@ -3,7 +3,7 @@ package com.brainacad.studyproject.gui.view;
 import javax.swing.*;
 
 /**
- * Created by User on 11/8/2016.
+ * Created by ${UArabei}.
  */
 public abstract class RefreshableView {
 

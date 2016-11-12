@@ -4,7 +4,7 @@ import com.brainacad.studyproject.data.dao.DaoFactory;
 import com.brainacad.studyproject.data.dao.UserDao;
 
 /**
- * Created by User on 11/1/2016.
+ * Created by ${UArabei}.
  */
 public class StubDaoFactory extends DaoFactory {
 

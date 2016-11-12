@@ -1,7 +1,7 @@
 package com.brainacad.studyproject.gui.view;
 
 /**
- * Created by User on 11/8/2016.
+ * Created by ${UArabei}.
  */
 public enum View {
 

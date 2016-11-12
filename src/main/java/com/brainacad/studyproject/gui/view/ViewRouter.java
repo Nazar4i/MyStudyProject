@@ -7,7 +7,7 @@ import javax.swing.*;
 import static com.brainacad.studyproject.gui.view.View.LOGIN;
 
 /**
- * Created by User on 11/8/2016.
+ * Created by ${UArabei}.
  */
 public class ViewRouter {
 

@@ -6,7 +6,7 @@ import com.brainacad.studyproject.data.domain.User;
 import com.brainacad.studyproject.service.LoginService;
 
 /**
- * Created by User on 11/1/2016.
+ * Created by ${UArabei}.
  */
 public class LoginServiceImpl implements LoginService {
 

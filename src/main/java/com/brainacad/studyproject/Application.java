@@ -18,11 +18,8 @@ public class Application {
             public void run() {
                 ViewRouter viewRouter = ViewRouter.getInstance();
                 viewRouter.start();
-                //adasdad
             }
         });
     }
 
 }
-
-

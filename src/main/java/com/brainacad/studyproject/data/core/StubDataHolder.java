@@ -10,7 +10,7 @@ import static com.brainacad.studyproject.data.domain.Role.ADMIN;
 import static com.brainacad.studyproject.data.domain.Role.USER;
 
 /**
- * Created by User on 11/1/2016.
+ * Created by ${UArabei}.
  */
 public class StubDataHolder {
 

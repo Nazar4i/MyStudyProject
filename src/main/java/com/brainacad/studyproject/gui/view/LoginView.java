@@ -12,7 +12,7 @@ import static com.brainacad.studyproject.gui.view.View.LOGIN;
 import static com.brainacad.studyproject.gui.view.View.USERS;
 
 /**
- * Created by User on 11/8/2016.
+ * Created by ${UArabei}.
  */
 public class LoginView extends RefreshableView {
 

@@ -15,7 +15,7 @@ import static com.brainacad.studyproject.data.domain.Role.ADMIN;
 import static com.brainacad.studyproject.data.domain.Role.USER;
 
 /**
- * Created by User on 11/5/2016.
+ * Created by ${UArabei}.
  */
 public class JdbcUserDao implements UserDao {
 

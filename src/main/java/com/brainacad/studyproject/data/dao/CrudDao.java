@@ -3,7 +3,7 @@ package com.brainacad.studyproject.data.dao;
 import java.util.Collection;
 
 /**
- * Created by User on 11/10/2016.
+ * Created by ${UArabei}.
  */
 public interface CrudDao<E> {
 

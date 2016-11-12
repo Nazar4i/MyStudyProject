@@ -3,7 +3,7 @@ package com.brainacad.studyproject.data.core;
 import java.sql.*;
 
 /**
- * Created by User on 11/5/2016.
+ * Created by ${UArabei}.
  */
 public class ConnectionManager {
 

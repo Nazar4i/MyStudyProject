@@ -8,7 +8,7 @@ import com.brainacad.studyproject.service.UserService;
 import java.util.Collection;
 
 /**
- * Created by User on 11/10/2016.
+ * Created by ${UArabei}.
  */
 public class UserServiceImpl implements UserService {
 

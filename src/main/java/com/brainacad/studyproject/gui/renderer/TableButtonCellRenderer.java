@@ -5,7 +5,7 @@ import javax.swing.table.TableCellRenderer;
 import java.awt.*;
 
 /**
- * Created by User on 11/12/2016.
+ * Created by ${UArabei}.
  */
 public class TableButtonCellRenderer extends JButton implements TableCellRenderer {
 

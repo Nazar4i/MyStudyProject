@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by User on 11/8/2016.
+ * Created by ${UArabei}.
  */
 public class ViewFactory {
 

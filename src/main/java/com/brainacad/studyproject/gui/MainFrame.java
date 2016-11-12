@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 
 /**
- * Created by User on 11/8/2016.
+ * Created by ${UArabei}.
  */
 public class MainFrame extends JFrame {
 

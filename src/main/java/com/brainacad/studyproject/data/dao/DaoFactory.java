@@ -3,7 +3,7 @@ package com.brainacad.studyproject.data.dao;
 import com.brainacad.studyproject.data.dao.impl.StubDaoFactory;
 
 /**
- * Created by User on 11/1/2016.
+ * Created by ${UArabei}.
  */
 public abstract class DaoFactory {
 
