@@ -9,7 +9,8 @@ import com.brainacad.studyproject.data.dao.UserDao;
 public class StubDaoFactory extends DaoFactory {
 
     @Override
-    public UserDao getUserDao() {
+    public UserDao getUserDao()
+    {
         return new StubUserDao();
     }
 
