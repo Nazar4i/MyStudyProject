@@ -5,6 +5,7 @@ import java.sql.*;
 /**
  * Created by ${UArabei}.
  */
+
 public class ConnectionManager {
 
     private static ConnectionManager instance;
@@ -20,24 +21,11 @@ public class ConnectionManager {
     }
 
     public Connection getConnection() {
-        Connection connection = null;
-        try {
-            Class.forName("com.mysql.jdbc.Driver");
-            connection = DriverManager
-                    .getConnection("jdbc:mysql://localhost:3306/brain?useUnicode\\=true&characterEncoding\\=UTF-8", "root", "root");
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return connection;
+        return JdbcConnectionPool.getInstance().getConnection();
     }
 
     public void closeConnection(Connection connection) {
-        try {
-            connection.close();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+        JdbcConnectionPool.getInstance().releaseConnection(connection);
     }
+
 }

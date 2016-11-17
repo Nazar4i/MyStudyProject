@@ -12,6 +12,7 @@ public abstract class RefreshableView {
     public abstract View getName();
 
     public JPanel getContent() {
+
         return content;
     }
 
