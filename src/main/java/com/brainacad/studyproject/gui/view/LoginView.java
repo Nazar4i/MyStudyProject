@@ -41,6 +41,8 @@ public class LoginView extends RefreshableView {
         content.add(passwordField);
         passwordField.setColumns(10);
 
+
+
         JLabel passwordLabel = new JLabel("Password");
         passwordLabel.setBounds(70, 109, 86, 14);
         content.add(passwordLabel);

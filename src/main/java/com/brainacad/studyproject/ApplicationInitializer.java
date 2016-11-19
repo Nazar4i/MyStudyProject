@@ -5,6 +5,7 @@ import com.brainacad.studyproject.data.core.StubDataHolder;
 import com.brainacad.studyproject.gui.ViewRouter;
 import com.brainacad.studyproject.util.ApplicationUtils;
 
+import javax.swing.*;
 import java.awt.*;
 import java.util.Properties;
 
@@ -29,6 +30,8 @@ public class ApplicationInitializer {
             default:
                 StubDataHolder.createData();
         }
+
+        JFrame.setDefaultLookAndFeelDecorated(true);
         EventQueue.invokeLater(new Runnable() {
             public void run() {
                 ViewRouter viewRouter = ViewRouter.getInstance();
