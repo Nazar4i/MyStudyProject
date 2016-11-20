@@ -31,7 +31,7 @@ public class ApplicationInitializer {
                 StubDataHolder.createData();
         }
 
-        JFrame.setDefaultLookAndFeelDecorated(true);
+       JFrame.setDefaultLookAndFeelDecorated(true);
         EventQueue.invokeLater(new Runnable() {
             public void run() {
                 ViewRouter viewRouter = ViewRouter.getInstance();

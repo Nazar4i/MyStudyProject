@@ -1,7 +1,7 @@
 package com.brainacad.studyproject.gui.view;
 
-import com.brainacad.studyproject.data.domain.User;
-import com.brainacad.studyproject.gui.ViewRouter;
+import com.brainacad.studyproject.data.domain.Ad;
+
 import com.brainacad.studyproject.gui.editor.UserEditButtonEditor;
 import com.brainacad.studyproject.gui.renderer.TableButtonCellRenderer;
 import com.brainacad.studyproject.service.UserService;
@@ -12,62 +12,66 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.table.DefaultTableModel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.Collection;
-import java.util.function.Consumer;
 
-import static com.brainacad.studyproject.gui.view.View.ADD_USER;
-import static com.brainacad.studyproject.gui.view.View.USERS;
 
-/**
- * Created by ${UArabei}.
- */
-public class UsersView extends RefreshableView {
+import static com.brainacad.studyproject.gui.view.View.ADS;
 
-    private JButton addButton;
+
+public class AdsView extends RefreshableView {
+    private JButton allButton;
+    private JButton myButton;
     private JTable usersTable;
     private DefaultTableModel tableModel;
 
     private UserService userService;
 
-    public UsersView() {
+    public AdsView(){
         userService = new UserServiceImpl();
         content.setBorder(new EmptyBorder(5, 5, 5, 5));
-        addButton = new JButton("ADD");
-        content.add(addButton);
-        addButton.addActionListener(new ActionListener() {
+        myButton = new JButton("MY");
+        content.add(myButton);
+
+        myButton.addActionListener(new ActionListener(){
+
             @Override
             public void actionPerformed(ActionEvent e) {
-                ViewRouter viewRouter = ViewRouter.getInstance();
-                viewRouter.switchView(USERS, ADD_USER);
+
             }
         });
-        String [] columns = {"ID","USERNAME",""};
+
+        content.setBorder(new EmptyBorder(5, 5, 5, 5));
+        allButton = new JButton("ALL ");
+        content.add(allButton);
+
+        allButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+
+       String [] columns = {"WHAT","THE ", "FUCK", "BLAT"};
         tableModel = new DefaultTableModel(columns, 0);
         usersTable = new JTable(tableModel);
         usersTable.getColumnModel().getColumn(2).setCellRenderer(new TableButtonCellRenderer());
         usersTable.getColumnModel().getColumn(2).setCellEditor(new UserEditButtonEditor(new JCheckBox()));
         content.add(usersTable);
+
     }
 
     @Override
     public View getName() {
-        return USERS;
+        return ADS;
     }
 
     @Override
     public void refresh(Object ... params) {
-        tableModel.setRowCount(0);
-        Collection<User> users = userService.getAllUsers();
-        users.forEach(new Consumer<User>() {
-            @Override
-            public void accept(User user) {
-                tableModel.addRow(UsersView.this.map(user));
-            }
-        });
+
     }
 
-    public Object[] map(User user) {
-        return new Object[] {user.getId(), user.getUsername(), "EDIT"};
+
+    public Object[] map(Ad ad) {
+        return new Object[] {ad.getUserID(), ad.getAdType(),ad.getAnnoucementID()};
     }
 
 }

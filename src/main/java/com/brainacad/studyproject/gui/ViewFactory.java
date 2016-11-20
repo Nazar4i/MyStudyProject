@@ -39,6 +39,9 @@ public class ViewFactory {
             case ADD_USER:
                 holder.putIfAbsent(type, new AddUserView());
                 return holder.get(type);
+            case ADS:
+                holder.putIfAbsent(type, new AdsView());
+                return holder.get(type);
             default:
                 throw new RuntimeException("TODO");
         }
