@@ -97,5 +97,4 @@ public class EditUserView extends RefreshableView {
         passwordField.setText(user.getPassword());
 
     }
-
 }

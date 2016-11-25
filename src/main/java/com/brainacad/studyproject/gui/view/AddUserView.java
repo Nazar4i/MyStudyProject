@@ -28,6 +28,7 @@ public class AddUserView extends RefreshableView {
     private JLabel usernameLabel;
     private JLabel passwordLabel;
     private JButton createButton;
+    private JButton backButton;
 
     public AddUserView() {
         userService = new UserServiceImpl();
@@ -62,6 +63,7 @@ public class AddUserView extends RefreshableView {
                 String username = usernameField.getText();
                 String password = passwordField.getText();
                 User user = new User();
+                user.setId(2);
                 user.setUsername(username);
                 user.setPassword(password);
                 user.setRole(Role.USER);
@@ -74,6 +76,16 @@ public class AddUserView extends RefreshableView {
                 }
             }
         });
+        backButton = new JButton("BACK");
+        content.add(backButton);
+        backButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                ViewRouter viewRouter = ViewRouter.getInstance();
+                viewRouter.switchView(USERS,USERS);
+            }
+        });
+
     }
 
     @Override
@@ -85,5 +97,4 @@ public class AddUserView extends RefreshableView {
     public void refresh(Object... params) {
 
     }
-
 }

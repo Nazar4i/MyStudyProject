@@ -6,70 +6,60 @@ package com.brainacad.studyproject.data.domain;
 public class Ad {
     //TODO: describe ad
 
-    private int userID;
-    private int annoucementID;
-    private int annoucementTupe;
-    private String descriptionL;
-    private String descriptionS;
-    private AdType adType;
+    private int AdID;
+    private int UserId;
+    private String shortDesc;
+    private String fullDesc;
+    private Type type;
 
-    public int getUserID() {
-        return userID;
+    public int getAdID() {
+        return AdID;
     }
 
-    public void setUserID(int userID) {
-        this.userID = userID;
+    public void setAdID(int adID) {
+        AdID = adID;
     }
 
-    public int getAnnoucementID() {
-        return annoucementID;
+    public int getUserId() {
+        return UserId;
     }
 
-    public void setAnnoucementID(int annoucementID) {
-        this.annoucementID = annoucementID;
+    public void setUserId(int userId) {
+        UserId = userId;
     }
 
-    public int getAnnoucementTupe() {
-        return annoucementTupe;
+    public String getShortDesc() {
+        return shortDesc;
     }
 
-    public void setAnnoucementTupe(int annoucementTupe) {
-        this.annoucementTupe = annoucementTupe;
+    public void setShortDesc(String shortDesc) {
+        this.shortDesc = shortDesc;
     }
 
-    public String getDescriptionL() {
-        return descriptionL;
+    public String getFullDesc() {
+        return fullDesc;
     }
 
-    public void setDescriptionL(String descriptionL) {
-        this.descriptionL = descriptionL;
+    public void setFullDesc(String fullDesc) {
+        this.fullDesc = fullDesc;
     }
 
-    public String getDescriptionS() {
-        return descriptionS;
+    public Type getType() {
+        return type;
     }
 
-    public void setDescriptionS(String descriptionS) {
-        this.descriptionS = descriptionS;
-    }
-
-    public AdType getAdType() {
-        return adType;
-    }
-
-    public void setAdType(AdType adType) {
-        this.adType = adType;
+    public void setType(Type type) {
+        this.type = type;
     }
 
     @Override
     public String toString() {
         return "Ad{" +
-                "userID=" + userID +
-                ", annoucementID=" + annoucementID +
-                ", annoucementTupe=" + annoucementTupe +
-                ", descriptionL='" + descriptionL + '\'' +
-                ", descriptionS='" + descriptionS + '\'' +
-                ", adType=" + adType +
+                "AdID=" + AdID +
+                ", UserId=" + UserId +
+                ", shortDesc='" + shortDesc + '\'' +
+                ", fullDesc='" + fullDesc + '\'' +
+                ", type=" + type +
                 '}';
     }
 }

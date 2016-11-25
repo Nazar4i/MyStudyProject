@@ -10,4 +10,9 @@ public class JdbcDaoFactory extends DaoFactory {
     public UserDao getUserDao() {
         return new JdbcUserDao();
     }
+
+    @Override
+    public AdDao getAdDao() {
+        return null;
+    }
 }
