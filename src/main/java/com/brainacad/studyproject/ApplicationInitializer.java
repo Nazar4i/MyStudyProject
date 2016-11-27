@@ -34,6 +34,7 @@ public class ApplicationInitializer {
         JFrame.setDefaultLookAndFeelDecorated(true);
         EventQueue.invokeLater(new Runnable() {
             public void run() {
+
                 ViewRouter viewRouter = ViewRouter.getInstance();
                 viewRouter.start();
             }

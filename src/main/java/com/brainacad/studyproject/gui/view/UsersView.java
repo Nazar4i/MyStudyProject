@@ -23,7 +23,6 @@ import static com.brainacad.studyproject.gui.view.View.USERS;
  */
 public class UsersView extends RefreshableView {
 
-
     private JButton addButton;
     private JTable usersTable;
     private DefaultTableModel tableModel;
@@ -48,10 +47,6 @@ public class UsersView extends RefreshableView {
         usersTable.getColumnModel().getColumn(2).setCellRenderer(new TableButtonCellRenderer());
         usersTable.getColumnModel().getColumn(2).setCellEditor(new UserEditButtonEditor(new JCheckBox()));
         content.add(usersTable);
-
-
-
-
     }
 
     @Override

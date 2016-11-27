@@ -2,7 +2,6 @@ package com.brainacad.studyproject.data.dao.impl;
 
 import com.brainacad.studyproject.data.core.ConnectionManager;
 import com.brainacad.studyproject.data.dao.UserDao;
-import com.brainacad.studyproject.data.domain.Role;
 import com.brainacad.studyproject.data.domain.User;
 
 import java.sql.Connection;
