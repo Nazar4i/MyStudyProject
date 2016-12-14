@@ -1,0 +1,5 @@
+In the final project were realized desk with ads. After you run application, you can see the login window and you can enter as a user or as admin.
+If we go as admin we  see all users who are in the database, we can add, edit, and delete user. In case if we login as user, we see a window with a list of my ads, and ads another users. 
+We can buy, sell and change ads. In database were realized users and ads(with using CRUD).Also create a cap that demonstrates  the program without the base.
+In short, in project were used :patterns, such as DAO ABSTRACT FACTORY SINGLETON OBSERVER 
+Swing for realization GUI, SQL(CRUD), JdbcConnectionPool.
